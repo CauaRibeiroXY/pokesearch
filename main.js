@@ -1,3 +1,9 @@
+import http from 'http';
+const servidor = http.createServer();
+const port = process.env.PORT || 8080;
+app.listen(port)
+servidor.listen(port);
+
 // API inicio
 const baseUrl = "https://pokeapi.co/api/v2/"
 const input = document.getElementById('name')
