@@ -1,0 +1,11 @@
+.capitalized {
+	text-transform: capitalize;
+    font-weight: bold;
+}
+.input_style{
+	width: 25%;
+	margin: 5px 0;
+}
+.switch_style{
+	margin: 15px 0;
+}
