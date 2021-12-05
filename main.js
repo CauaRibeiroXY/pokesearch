@@ -1,5 +1,3 @@
-import http from 'http';
-const servidor = http.createServer();
 const port = process.env.PORT || 8080;
 app.listen(port)
 servidor.listen(port);

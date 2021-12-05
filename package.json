@@ -1,4 +1,20 @@
-"scripts":{
-    "start": "node main.js"
-    "test": "echo \" Error: no test specified\” && exit 1"
+{
+  "name": "pokesearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CauaRibeiroXY/pokesearch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CauaRibeiroXY/pokesearch/issues"
+  },
+  "homepage": "https://github.com/CauaRibeiroXY/pokesearch#readme"
 }
