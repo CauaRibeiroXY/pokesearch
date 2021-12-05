@@ -30,16 +30,16 @@ function buscar(valor) {
 
 
     link = baseUrl + "pokemon/" + valor
-    console.log(link)
+    
     if (!shiny.checked){
         fetch(link)
             .then((response) => response.json())
             .then((data) => {
-                namepkm.textContent = data.name
+                namepkm.textContent = data.name +" #" + data.id
                 pkmimage.style.backgroundImage = `url('${data.sprites.other.home.front_default}')`
                 statuspkn.innerHTML = ''
                 for (var i in data.stats) {
-                    console.log(data.stats[i])
+                    
                     statuspkn.innerHTML +=
                         `<li>
                 ${data.stats[i].stat.name}: ${data.stats[i].base_stat}
