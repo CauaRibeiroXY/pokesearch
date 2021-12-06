@@ -8,8 +8,9 @@ const button = document.getElementById('buscar')
 
 
 button.addEventListener('click', () => {
-
-    buscar(input.value)
+    valor = input.value
+    valor=valor.toLowerCase()
+    buscar(valor)
 
 })
 
@@ -21,7 +22,7 @@ random.addEventListener('click', () => {
 })
 
 function buscar(valor) {
-
+    
     if (valor > 898)
         valor = 898
 
@@ -58,7 +59,7 @@ function buscar(valor) {
         fetch(link)
         .then((response) => response.json())
         .then((data) => {
-            namepkm.textContent = data.name
+            namepkm.textContent = data.name +" #" + data.id
             pkmimage.style.backgroundImage = `url('${data.sprites.other.home.front_shiny}')`
         })
         }
